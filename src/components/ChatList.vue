@@ -29,7 +29,7 @@ export default {
   },
   created() {
     // this.socket = io('http://localhost:3000');
-    this.socket = io('https://nodejs-chat-room.vercel.app');
+    this.socket = io('https://nodejs-chat-room.vercel.app:3000');
     this.socket.on('chat message', (data) => {
       this.messages.push(data);
     });
